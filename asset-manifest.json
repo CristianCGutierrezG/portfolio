@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.2ecccaf8.css",
+    "main.js": "/portfolio/static/js/main.8a3ecc61.js",
+    "static/media/TypefaceMarioWorldPixelFilledRegular-rgVMx.ttf": "/portfolio/static/media/TypefaceMarioWorldPixelFilledRegular-rgVMx.fa100bb83c31c51adfe6.ttf",
+    "static/media/TitleName.png": "/portfolio/static/media/TitleName.fe9e7fe9c2f0ae24ba1d.png",
+    "static/media/bg-Montains.png": "/portfolio/static/media/bg-Montains.6761de42f08994d65d53.png",
+    "static/media/clouds2.png": "/portfolio/static/media/clouds2.32c0bfc77ef32d06895c.png",
+    "static/media/bg-Montain.png": "/portfolio/static/media/bg-Montain.8a6263c087675fe18f26.png",
+    "static/media/Super-Mario-World.ttf": "/portfolio/static/media/Super-Mario-World.d51af975b394ae89bb3f.ttf",
+    "index.html": "/portfolio/index.html",
+    "main.2ecccaf8.css.map": "/portfolio/static/css/main.2ecccaf8.css.map",
+    "main.8a3ecc61.js.map": "/portfolio/static/js/main.8a3ecc61.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2ecccaf8.css",
+    "static/js/main.8a3ecc61.js"
+  ]
+}
