@@ -1,0 +1,15 @@
+.intro {
+  &_bgParallax {
+    height: 100vh;
+    background-color: #9ce6e6;
+  }
+
+  @keyframes clouds {
+    0% {
+      left: 100%;
+    }
+    100% {
+      left: 0%;
+    }
+  }
+}

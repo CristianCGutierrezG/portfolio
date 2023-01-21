@@ -1,0 +1,35 @@
+@font-face {
+  font-family: Super-Mario-Title;
+  src: url(../fonts/TypefaceMarioWorldPixelFilledRegular-rgVMx.ttf);
+}
+@font-face {
+  font-family: Super-Mario;
+  src: url(../fonts/Super-Mario-World.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: Super-Mario;
+}
+
+button {
+  background-color: transparent;
+  border: 0px;
+}
+
+@mixin flex($flex-flow1, $flex-flow2, $justify-content, $align-items) {
+  display: flex;
+  flex-flow: $flex-flow1 $flex-flow2;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+//Conponents
+@import "./components/navbar";
+
+//Pages
+@import "./pages/intro";
+@import "./pages/info";

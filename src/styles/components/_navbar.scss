@@ -1,0 +1,81 @@
+.navbar {
+  position: fixed;
+  display: block;
+  height: 100%;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  padding-left: 1.25em;
+
+  &-bar {
+    position: relative;
+    height: 100vh;
+  }
+  &-nav {
+    position: absolute;
+    @include flex(column, nowrap, null, center);
+    gap: 16%;
+    width: 100%;
+    height: 100%;
+    padding: 65% 0 65% 1.25em;
+    top: 0;
+    left: 0;
+
+    &-button {
+      height: 7%;
+      width: 70%;
+
+      & img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  &-characterContent {
+    position: absolute;
+    @include flex(column, null, null, center);
+    width: 100%;
+    height: 100%;
+    padding-left: 1.25em;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+
+    &-scroll {
+      position: relative;
+      width: 100%;
+      height: 100%;
+
+      &-image {
+        height: 12%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.reference {
+  position: absolute;
+  margin: 65% 0 65% 1.25em;
+  z-index: 1003;
+  width: 90%;
+  height: 78.5%;
+  left: 0;
+  top: 0;
+}
+
+.base {
+  position: absolute;
+  padding-left: 1.25em;
+  z-index: 1002;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  &-character {
+    position: relative;
+    height: 11.7%;
+    width: 99.6%;
+  }
+}
