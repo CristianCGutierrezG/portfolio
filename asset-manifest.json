@@ -1,19 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.2ecccaf8.css",
-    "main.js": "/portfolio/static/js/main.8a3ecc61.js",
+    "main.css": "/portfolio/static/css/main.91a50835.css",
+    "main.js": "/portfolio/static/js/main.f9dad52d.js",
+    "static/media/MarioIntro.mp3": "/portfolio/static/media/MarioIntro.d712c8d521e459284fe4.mp3",
     "static/media/TypefaceMarioWorldPixelFilledRegular-rgVMx.ttf": "/portfolio/static/media/TypefaceMarioWorldPixelFilledRegular-rgVMx.fa100bb83c31c51adfe6.ttf",
+    "static/media/Lava.png": "/portfolio/static/media/Lava.5e4d17737d4f8ccdd357.png",
+    "static/media/Abilities.png": "/portfolio/static/media/Abilities.76a46bb207d20d977d8b.png",
     "static/media/TitleName.png": "/portfolio/static/media/TitleName.fe9e7fe9c2f0ae24ba1d.png",
+    "static/media/about2.png": "/portfolio/static/media/about2.b1127a50e7c7b9778662.png",
     "static/media/bg-Montains.png": "/portfolio/static/media/bg-Montains.6761de42f08994d65d53.png",
     "static/media/clouds2.png": "/portfolio/static/media/clouds2.32c0bfc77ef32d06895c.png",
+    "static/media/MarioPipeline.mp3": "/portfolio/static/media/MarioPipeline.e6256b86d072f0130c12.mp3",
     "static/media/bg-Montain.png": "/portfolio/static/media/bg-Montain.8a6263c087675fe18f26.png",
     "static/media/Super-Mario-World.ttf": "/portfolio/static/media/Super-Mario-World.d51af975b394ae89bb3f.ttf",
     "index.html": "/portfolio/index.html",
-    "main.2ecccaf8.css.map": "/portfolio/static/css/main.2ecccaf8.css.map",
-    "main.8a3ecc61.js.map": "/portfolio/static/js/main.8a3ecc61.js.map"
+    "main.91a50835.css.map": "/portfolio/static/css/main.91a50835.css.map",
+    "main.f9dad52d.js.map": "/portfolio/static/js/main.f9dad52d.js.map"
   },
   "entrypoints": [
-    "static/css/main.2ecccaf8.css",
-    "static/js/main.8a3ecc61.js"
+    "static/css/main.91a50835.css",
+    "static/js/main.f9dad52d.js"
   ]
 }
