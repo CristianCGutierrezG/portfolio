@@ -13,11 +13,16 @@
   padding: 0;
   font-size: 16px;
   font-family: Super-Mario;
+  cursor: url(../images/Sprites/BigSize/cursor.png), auto;
 }
 
 button {
   background-color: transparent;
   border: 0px;
+}
+
+@mixin cursor() {
+  cursor: url(../images/Sprites/BigSize/cursorHand.png), pointer;
 }
 
 @mixin flex($flex-flow1, $flex-flow2, $justify-content, $align-items) {
@@ -27,9 +32,21 @@ button {
   align-items: $align-items;
 }
 
-//Conponents
+.cursor {
+  background-color: aqua;
+  height: 32px;
+  width: 32px;
+}
+button,
+a {
+  @include cursor();
+}
+
+//Components
 @import "./components/navbar";
 
 //Pages
 @import "./pages/intro";
-@import "./pages/info";
+@import "./pages/about";
+@import "./pages/skills";
+@import "./pages/contact";

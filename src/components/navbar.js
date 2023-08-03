@@ -65,6 +65,8 @@ export default function Navbar() {
             <button></button>
           </div>
         </nav>
+
+        {/* Change this, modify the offset and do it with the Y value of the entire window */}
         <ScrollContainer
           style={{ paddingLeft: "1.25em" }}
           className="navbar-characterContent"

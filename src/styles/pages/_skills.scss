@@ -1,0 +1,85 @@
+.skills {
+  &_background {
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    &-lava {
+      height: 100%;
+      width: 100%;
+    }
+    &-stalactites {
+      position: absolute;
+      top: 200vh;
+      height: 100%;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+  &_content {
+    position: absolute;
+    top: 200vh;
+    height: 100%;
+    width: 100%;
+    @include flex(row, nowrap, center, null);
+    // background-color: rgb(236, 30, 30);
+
+    &-box2 {
+      position: absolute;
+      display: none;
+      top: 10vh;
+      left: 30vw;
+      height: 15%;
+      width: 10%;
+      // background-color: rgb(15, 179, 255);
+    }
+  }
+}
+
+.table {
+  position: relative;
+  top: 9vh;
+  height: 73%;
+  width: 75%;
+  @include flex(column, nowrap, center, null);
+  gap: 5px;
+  // background-color: #fff;
+  &_row {
+    height: 22%;
+    width: 100%;
+    gap: 5px;
+    @include flex(row, nowrap, center, center);
+    // background-color: rgb(11, 198, 231);
+    &-element {
+      height: 100%;
+      width: 20%;
+      @include flex(row, nowrap, center, center);
+      // background-color: rgb(154, 231, 11);
+      &-logo {
+        height: 90%;
+        width: 80%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+  }
+}
+.top {
+  height: 10%;
+  // background-color: rgb(0, 0, 0);
+  h5 {
+    font-size: 0.8em !important;
+    color: #fff;
+  }
+}
+.bgLava {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  line-height: 0;
+}
+.scCoin {
+  height: 90%;
+  width: 70%;
+}

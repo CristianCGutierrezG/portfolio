@@ -1,3 +1,4 @@
+import cursorHand from "../images/Sprites/BigSize/cursorHand.png";
 export default function Sprite({ image, data }) {
   const { y, x, hBackground, wBackground } = data;
 
@@ -11,6 +12,8 @@ export default function Sprite({ image, data }) {
         backgroundRepeat: "no-repeat",
         backgroundSize: `${hBackground}% ${wBackground}%`,
         backgroundPosition: `-${x}px -${y}px`,
+        lineHeight: "0",
+        // cursor: `url(${cursorHand}), pointer`,
       }}
     />
   );
