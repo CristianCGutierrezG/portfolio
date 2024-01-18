@@ -7,7 +7,6 @@ import Actor from "./actor";
 import useInfoRef from "../hooks/useInfoRef";
 import useAnimation from "../hooks/useAnimation";
 import useHandleResize from "../hooks/useHandleResize";
-import useHandleScroll from "../hooks/useHandleScroll";
 
 //images
 import spCoin from "../images/Sprites/BigSize/coin.png";
@@ -31,27 +30,39 @@ export default function Coin({ reference }) {
     setSizeData({ ...sizeData, ...dataSize });
   });
 
-  useHandleScroll(() => {
-    size();
-    setSizeData({ ...sizeData, ...dataSize });
-    console.log(sizeData);
-  });
   function fn() {
     setStep((prev) => (prev < 3 ? prev + 1 : 0));
   }
 
-  const { animateInfinite, requestRef } = useAnimation(
-    1000 / 6,
+
+  const {animateTime, requestRef } = useAnimation(
+    1000 / 8,
     Date.now(),
-    fn,
     null,
-    400
+    fn,
+    800
   );
 
-  useEffect(() => {
-    requestRef.current = requestAnimationFrame(animateInfinite);
+  function handleHoverOn() {
+    size();
+    setSizeData({ ...sizeData, ...dataSize });
+    setTimeout(function () {
+        setStep(0);
+    }, 850);
+    requestRef.current = requestAnimationFrame(animateTime);
     return () => cancelAnimationFrame(requestRef.current);
-  }, [animateInfinite, requestRef]);
+  }
 
-  return <Actor sprite={spCoin} data={sizeData} step={step} />;
+
+
+
+  return(
+    <>
+    <Actor sprite={spCoin} data={sizeData} step={step} />
+    <div
+        className="scCoin__box"
+        onMouseEnter={handleHoverOn}
+      ></div>
+  </>
+  ); 
 }

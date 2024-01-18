@@ -1,4 +1,3 @@
-import cursorHand from "../images/Sprites/BigSize/cursorHand.png";
 export default function Sprite({ image, data }) {
   const { y, x, hBackground, wBackground } = data;
 

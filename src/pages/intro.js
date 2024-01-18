@@ -91,12 +91,11 @@ export default function Intro(props) {
                       className="intro_music"
                       onClick={handleClick}
                       animate={{
-                        rotate: [0, 10, -10, 10, -10, 0],
+                        rotate: [10, -10, 10, -10, 10],
                       }}
                       transition={{
-                        duration: 3,
+                        duration: 2,
                         repeat: Infinity,
-                        repeatDelay: 1,
                       }}
                     />
                   ) : (
