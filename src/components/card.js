@@ -13,12 +13,11 @@ export default function Card(prop) {
       variants={variants}
       className="about_card"
     >
-      <div className="about_card-close">
-        <button onClick={() => prop.click()}>X</button>
-      </div>
-
-      <div className="about_card-info">
+      <button onClick={() => prop.click()}>X</button>
+      <div className="about_card-title">
         <h2>{prop.title}</h2>
+      </div>      
+      <div className="about_card-info">
         <div>{prop.children}</div>
       </div>
     </motion.div>

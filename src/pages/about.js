@@ -73,6 +73,7 @@ export default function About(props) {
                   <LuckyBlock
                     reference={blockRef}
                     click={() => handleClickLuckyblock(1)}
+                    show={showInfo}
                   />
                 </div>
               </div>
@@ -110,7 +111,7 @@ export default function About(props) {
           {showInfo === 1 ? (
             <div className="about_content-div">
               <Card
-                title="ABOUT"
+                title="ABOUT ME"
                 show={showInfo}
                 click={() => handleClickLuckyblock(0)}
               >
@@ -118,6 +119,10 @@ export default function About(props) {
                   I am a Freelance Developer with experience as a FrontEnd
                   developer, eager to improve my knowledge and gain work
                   experience, always trying to give the best of me
+                </p>
+                <p>
+                  I code and design cool and creative websites and also i 
+                  love pixel art obiusly
                 </p>
               </Card>
             </div>
