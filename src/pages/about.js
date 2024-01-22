@@ -13,6 +13,11 @@ import Card from "../components/card";
 //images
 import bgAbout from "../images/Back-ground/BigSize/about2.png";
 import bgPipeline from "../images/Back-ground/BigSize/pipeline.png";
+import picture from "../images/PresentationPicture.jpeg";
+import spBook from "../images/Sprites/BigSize/Book.png";
+import spControl from "../images/Sprites/BigSize/Control.png";
+import spDraw from "../images/Sprites/BigSize/Draw.png";
+import spStoryteller from "../images/Sprites/BigSize/Storyteller.png";
 
 //sounds
 import soundPipeline from "../sounds/MarioPipeline.mp3";
@@ -34,7 +39,7 @@ export default function About(props) {
       src,
     });
     sound.play();
-    Howler.volume(0.4);
+    Howler.volume(0.3);
   }
 
   function handleClickPipeline() {
@@ -64,7 +69,7 @@ export default function About(props) {
       >
         <div className="about_content">
           <div className="about_content-box1">
-            <Picture reference={divRef} scroll={scrollOn} />
+            <Picture reference={divRef} scroll={scrollOn} img={picture} />
           </div>
           <div className="about_content-box2">
             <div className="about_content-box2-flex">
@@ -115,15 +120,20 @@ export default function About(props) {
                 show={showInfo}
                 click={() => handleClickLuckyblock(0)}
               >
-                <p>
-                  I am a Freelance Developer with experience as a FrontEnd
-                  developer, eager to improve my knowledge and gain work
-                  experience, always trying to give the best of me
-                </p>
-                <p>
-                  I code and design cool and creative websites and also i 
-                  love pixel art obiusly
-                </p>
+                <div>
+                  <p>
+                    I am a Freelance Developer with experience as a FrontEnd
+                    developer, eager to improve my knowledge and gain work
+                    experience, always trying to give the best of me
+                  </p>
+                </div>
+                <div>
+                  <p>
+                    I code and design cool and creative websites and i am 
+                    also a pixel art artist
+                  </p>
+                </div>
+                
               </Card>
             </div>
           ) : showInfo === 2 ? (
@@ -133,7 +143,35 @@ export default function About(props) {
                 show={showInfo}
                 click={() => handleClickLuckyblock(0)}
               >
-                <p>VIDEO GAMES</p>
+                <div>
+                  <div>
+                    <p>VIDEO GAMES</p>
+                    <div div id="hobbies_img">
+                      <img src={spControl} alt="GamesImg" />
+                    </div>
+                  </div>
+                  <div>
+                    <p>DRAW</p>
+                    <div id="hobbies_img">
+                      <img src={spDraw} alt="GamesImg" />
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <p>STORYTELLING</p>
+                    <div div id="hobbies_img">
+                      <img src={spStoryteller} alt="GamesImg" />
+                    </div>
+                  </div>
+                  <div>
+                    <p>READ / WRITE</p>
+                    <div id="hobbies_img">
+                      <img src={spBook} alt="GamesImg" />
+                    </div>
+                  </div>
+                </div>
+                
               </Card>
             </div>
           ) : null}

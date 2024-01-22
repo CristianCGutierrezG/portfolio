@@ -18,7 +18,7 @@ export default function Card(prop) {
         <h2>{prop.title}</h2>
       </div>      
       <div className="about_card-info">
-        <div>{prop.children}</div>
+        {prop.children}
       </div>
     </motion.div>
   );
