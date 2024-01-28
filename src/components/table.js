@@ -26,8 +26,9 @@ export default function Table({content}) {
           <div className="scCoin" ref={divRef}>
             <Coin reference={divRef} />
           </div>
-        </div> :
-        <div key={i} className="table_row-element"></div>
+        </div> 
+        :
+        <div key={i} className="table_row-element"/>
       )
     }
     return content;
@@ -52,7 +53,9 @@ export default function Table({content}) {
       {content.map(item => (
       <div key={item.key} className="table_row" >
         <div className="table_row-element">
-          <div className="table_row-element-hoverInfo"
+          <div className="table_row-element-hoverInfo" 
+          onMouseLeave={handleHoverOff} 
+          onMouseEnter={handleHoverOn}
             style={{
               display: onHover ? "block" : "none",
             }}>

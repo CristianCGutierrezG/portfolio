@@ -51,8 +51,6 @@ export default function About(props) {
 
   const handleClickLuckyblock = (ButtonId) => {
     setShowInfo(ButtonId);
-    // document.body.className = "stop-scrolling";
-    // console.log(document.body.className);
   };
 
   const divRef = useRef();
