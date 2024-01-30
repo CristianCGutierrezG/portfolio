@@ -1,23 +1,27 @@
-import { useEffect } from "react";
 import { useState, useRef } from "react";
 import { Link } from "react-scroll";
 
 //components
-import Lava from "../components/lava";
+import Bat from "../components/bat";
 import Table from "../components/table";
 
 //images
 import bgSkills from "../images/Back-ground/BigSize/Abilities.png";
 import bgStalactites from "../images/Back-ground/BigSize/Estalactitas.png";
+import bgLava from "../images/Back-ground/BigSize/Lava1.gif"
 import scHTMl from "../images/Sprites/BigSize/HTML.png";
 import scCSS from "../images/Sprites/BigSize/CSS.png";
 import scJS from "../images/Sprites/BigSize/JS.png";
 import scReact from "../images/Sprites/BigSize/React.png";
-import { act } from "react-dom/test-utils";
+
+
+
 
 export default function Skills(props) {
   const divRef = useRef();
   const [actualTable, setActualTable] = useState(0)
+
+ 
 
   const contentTable = [
     [
@@ -36,7 +40,6 @@ export default function Skills(props) {
     
   ] 
 
-
   return (
     <section id={props.id}>
       <div
@@ -45,9 +48,11 @@ export default function Skills(props) {
           backgroundImage: `url(${bgSkills})`,
         }}
       >
-        <div className="skills__background-lava" ref={divRef}>
-          <Lava reference={divRef} />
-        </div>
+        <div className="skills__background-lava" 
+          style={{
+            backgroundImage: `url(${bgLava})`,
+          }}/>
+          {/* <Lava reference={divRef} /> */}
         <div
           className="skills__background-stalactites"
           style={{
@@ -64,53 +69,32 @@ export default function Skills(props) {
           </div>
           <div className="content__box2">
             <div className="content__box2-intern">
-              
-              <div 
-              className={`arrow arrow-left 
-              ${actualTable === 1 ? 
-                "animate__animated animate__slideInLeft  animate__slow"
-                : "animate__animated animate__slideOutLeft  animate__slow"
-              } `} 
-              onClick={()=>{setActualTable(0)} }>
-              </div>
-              
               <div className="content__box2-intern-table">
-                <div 
-                  className={` 
-                  ${actualTable === 0 ? 
-                    "animate__animated animate__slideInLeft  animate__slow"
-                    : "animate__animated animate__slideOutLeft  animate__slow"
-                  } `} 
-                  style={{width: "100%", height: "100%"}}
-                >
-                  <Table content={contentTable[0]}/>
-                </div>
-              
-                <div 
-                  className={` 
-                  ${actualTable === 1 ? 
-                    "animate__animated animate__slideInRight  animate__slow"
-                    : "animate__animated animate__slideOutRight  animate__slow"
-                  } `} 
-                  style={{width: "100%", height: "100%", transform: " translate3d(0, 66vh, 0)"}}
-                >
-                  <Table content={contentTable[1]}
-                  className = "exception"
-                  />
-                </div>
+                  <Table content={contentTable[0]} actual={actualTable} animationIn={"animate__slideInLeft"} animationOut={"animate__slideOutLeft"}/>
+                  <Table content={contentTable[1]} actual={actualTable} animationIn={"animate__slideInLeft"} animationOut={"animate__slideOutLeft"}/>
               </div>
-              
-              <div 
-                className={`arrow arrow-right 
-                ${actualTable === 0 ? 
-                  "animate__animated animate__slideInRight  animate__slow"
-                  : "animate__animated animate__slideOutLeft  animate__slow"
-                } `} 
-                // style={{display: actualTable == 0 ? "block" : "none",}}
-                onClick={()=>{setActualTable(1)} }>
+              <div className="arrowBox">
+                <div className={`arrowBox-arrow arrow-left 
+                  ${actualTable === 1 ? 
+                    "animate__animated animate__fadeIn  animate__fast animate__delay-2s"
+                    : "animate__animated animate__fadeOut  animate__fast"
+                  } `} 
+                  >
+                  <button onClick={()=>{setActualTable(0)}} />
+                </div> 
+                <div className={`arrowBox-arrow arrow-right 
+                  ${actualTable === 0 ? 
+                    "animate__animated animate__fadeIn  animate__fast animate__delay-2s"
+                    : "animate__animated animate__fadeOut  animate__fast"
+                  } `} 
+                  >
+                  <button onClick={()=>{setActualTable(1)}} />
+                </div>
               </div>
             </div>
-            <div className="content__box2-batbox" ></div>
+            <div className="scBat" ref={divRef}>
+              <Bat reference={divRef}/>
+            </div>
           </div>
           
         </div>

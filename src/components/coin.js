@@ -53,16 +53,13 @@ export default function Coin({ reference }) {
     return () => cancelAnimationFrame(requestRef.current);
   }
 
-
-
-
   return(
     <>
     <Actor sprite={spCoin} data={sizeData} step={step} />
     <div
-        className="scCoin__box"
-        onMouseEnter={handleHoverOn}
-      ></div>
+      className="scCoin__box"
+      onMouseEnter={handleHoverOn}
+    ></div>
   </>
   ); 
 }

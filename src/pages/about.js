@@ -151,7 +151,7 @@ export default function About(props) {
                   <div>
                     <p>DRAW</p>
                     <div id="hobbies_img">
-                      <img src={spDraw} alt="GamesImg" />
+                      <img src={spDraw} alt="HobbiesImg" />
                     </div>
                   </div>
                 </div>
@@ -159,13 +159,13 @@ export default function About(props) {
                   <div>
                     <p>STORYTELLING</p>
                     <div div id="hobbies_img">
-                      <img src={spStoryteller} alt="GamesImg" />
+                      <img src={spStoryteller} alt="StoryImg" />
                     </div>
                   </div>
                   <div>
                     <p>READ / WRITE</p>
                     <div id="hobbies_img">
-                      <img src={spBook} alt="GamesImg" />
+                      <img src={spBook} alt="BookImg" />
                     </div>
                   </div>
                 </div>

@@ -5,7 +5,7 @@ import Coin from "./coin";
 
 //images
 
-export default function Table({content}) {
+export default function Table({content, actual, animationIn, animationOut}) {
   const [onHover, setOnHover] = useState(false)
   const divRef = useRef();
 
@@ -35,7 +35,11 @@ export default function Table({content}) {
   }
 
   return (
-    <div className="table">
+    <div className={`table
+    ${actual === 0 ? 
+      `animate__animated ${animationIn}  animate__slow`
+      :  `animate__animated ${animationOut}  animate__slow`
+    } `} >
       <div className="table_row top">
         <div className="table_row-element"></div>
         <div className="table_row-element">
