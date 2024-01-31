@@ -63,7 +63,7 @@
   position: absolute;
   top: 15%;
   height: 75%;
-  width: 70%;
+  width: 69%;
   // z-index: 1000;
   @include flex(row, nowrap, space-between, center);
   &-arrow{
@@ -71,13 +71,19 @@
     width: 30px;
     height: 70px;
     top: 180px;
-    & button{
+    & button{    
       width: 100%;
       height: 100%;
-      background-color: #1cd1e9;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
     }
   }
 }
+
+.arrow-right{
+  transform: scaleX(-1);
+}
+
 .table {
   z-index: 1001;
   position: relative;

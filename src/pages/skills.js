@@ -13,6 +13,12 @@ import scHTMl from "../images/Sprites/BigSize/HTML.png";
 import scCSS from "../images/Sprites/BigSize/CSS.png";
 import scJS from "../images/Sprites/BigSize/JS.png";
 import scReact from "../images/Sprites/BigSize/React.png";
+import scSASS from "../images/Sprites/BigSize/SASS.png";
+import scGIT from "../images/Sprites/BigSize/GIT.png";
+import scFigma from "../images/Sprites/BigSize/Figma.png";
+import scSQL from "../images/Sprites/BigSize/SQL.png";
+import scArrow from "../images/Sprites/BigSize/arrow.png";
+
 
 
 
@@ -25,17 +31,17 @@ export default function Skills(props) {
 
   const contentTable = [
     [
-      {key:1, name:"HTML", img: scHTMl, NumCoins: 3},
-      {key:2, name:"CSS", img: scCSS, NumCoins: 3},
+      {key:1, name:"HTML5", img: scHTMl, NumCoins: 3},
+      {key:2, name:"CSS3", img: scCSS, NumCoins: 3},
       {key:3, name:"JS", img: scJS, NumCoins: 2},
       {key:4, name:"React", img: scReact, NumCoins: 2}
     ],
 
     [
-      {key:5, name:"figma", img: scHTMl, NumCoins: 3},
-      {key:6, name:"Photho", img: scCSS, NumCoins: 2},
-      {key:7, name:"sql", img: scJS, NumCoins: 2},
-      {key:8, name:"pixel", img: scReact, NumCoins: 2}
+      {key:5, name:"SASS", img: scSASS, NumCoins: 2},
+      {key:6, name:"GIT", img: scGIT, NumCoins: 2},
+      {key:7, name:"Figma", img: scFigma, NumCoins: 2},
+      {key:8, name:"SQL", img: scSQL, NumCoins: 1}
     ]
     
   ] 
@@ -52,7 +58,6 @@ export default function Skills(props) {
           style={{
             backgroundImage: `url(${bgLava})`,
           }}/>
-          {/* <Lava reference={divRef} /> */}
         <div
           className="skills__background-stalactites"
           style={{
@@ -74,13 +79,15 @@ export default function Skills(props) {
                   <Table content={contentTable[1]} actual={actualTable} animationIn={"animate__slideInLeft"} animationOut={"animate__slideOutLeft"}/>
               </div>
               <div className="arrowBox">
-                <div className={`arrowBox-arrow arrow-left 
+                <div className={`arrowBox-arrow 
                   ${actualTable === 1 ? 
                     "animate__animated animate__fadeIn  animate__fast animate__delay-2s"
                     : "animate__animated animate__fadeOut  animate__fast"
                   } `} 
                   >
-                  <button onClick={()=>{setActualTable(0)}} />
+                  <button onClick={()=>{setActualTable(0)}} style={{
+                    backgroundImage: `url(${scArrow})`,
+                  }}/>   
                 </div> 
                 <div className={`arrowBox-arrow arrow-right 
                   ${actualTable === 0 ? 
@@ -88,7 +95,9 @@ export default function Skills(props) {
                     : "animate__animated animate__fadeOut  animate__fast"
                   } `} 
                   >
-                  <button onClick={()=>{setActualTable(1)}} />
+                  <button onClick={()=>{setActualTable(1)}} style={{
+                    backgroundImage: `url(${scArrow})`,
+                  }}/>
                 </div>
               </div>
             </div>
