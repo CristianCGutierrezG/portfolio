@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.4b6abaab.css",
-    "main.js": "/portfolio/static/js/main.ae6045ae.js",
+    "main.css": "/portfolio/static/css/main.6f3cad70.css",
+    "main.js": "/portfolio/static/js/main.f39af0ed.js",
     "static/media/PresentationPicture.jpeg": "/portfolio/static/media/PresentationPicture.32115dff253f69bb0762.jpeg",
+    "static/media/River.gif": "/portfolio/static/media/River.1e42a0bd9a26718143d8.gif",
     "static/media/MarioIntro.mp3": "/portfolio/static/media/MarioIntro.d712c8d521e459284fe4.mp3",
     "static/media/TypefaceMarioWorldPixelFilledRegular-rgVMx.ttf": "/portfolio/static/media/TypefaceMarioWorldPixelFilledRegular-rgVMx.fa100bb83c31c51adfe6.ttf",
     "static/media/Lava1.gif": "/portfolio/static/media/Lava1.bd1a3d8556b635e0e4d3.gif",
@@ -10,17 +11,19 @@
     "static/media/Abilities.png": "/portfolio/static/media/Abilities.76a46bb207d20d977d8b.png",
     "static/media/TitleName.png": "/portfolio/static/media/TitleName.fe9e7fe9c2f0ae24ba1d.png",
     "static/media/about2.png": "/portfolio/static/media/about2.b1127a50e7c7b9778662.png",
+    "static/media/bgCastel.png": "/portfolio/static/media/bgCastel.27f21c3b1c114943ab3d.png",
     "static/media/bg-Montains.png": "/portfolio/static/media/bg-Montains.6761de42f08994d65d53.png",
     "static/media/clouds2.png": "/portfolio/static/media/clouds2.32c0bfc77ef32d06895c.png",
     "static/media/MarioPipeline.mp3": "/portfolio/static/media/MarioPipeline.e6256b86d072f0130c12.mp3",
+    "static/media/Skull.png": "/portfolio/static/media/Skull.d5b432b637ddd3a23012.png",
     "static/media/bg-Montain.png": "/portfolio/static/media/bg-Montain.8a6263c087675fe18f26.png",
     "static/media/Super-Mario-World.ttf": "/portfolio/static/media/Super-Mario-World.d51af975b394ae89bb3f.ttf",
     "index.html": "/portfolio/index.html",
-    "main.4b6abaab.css.map": "/portfolio/static/css/main.4b6abaab.css.map",
-    "main.ae6045ae.js.map": "/portfolio/static/js/main.ae6045ae.js.map"
+    "main.6f3cad70.css.map": "/portfolio/static/css/main.6f3cad70.css.map",
+    "main.f39af0ed.js.map": "/portfolio/static/js/main.f39af0ed.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b6abaab.css",
-    "static/js/main.ae6045ae.js"
+    "static/css/main.6f3cad70.css",
+    "static/js/main.f39af0ed.js"
   ]
 }
