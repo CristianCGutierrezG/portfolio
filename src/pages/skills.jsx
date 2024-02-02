@@ -1,5 +1,4 @@
 import { useState, useRef } from "react";
-import { Link } from "react-scroll";
 
 //components
 import Bat from "../components/bat";
@@ -20,14 +19,9 @@ import scSQL from "../images/Sprites/BigSize/SQL.png";
 import scArrow from "../images/Sprites/BigSize/arrow.png";
 
 
-
-
-
 export default function Skills(props) {
   const divRef = useRef();
   const [actualTable, setActualTable] = useState(0)
-
- 
 
   const contentTable = [
     [
@@ -96,7 +90,7 @@ export default function Skills(props) {
                   } `} 
                   >
                   <button onClick={()=>{setActualTable(1)}} style={{
-                    backgroundImage: `url(${scArrow})`,
+                    backgroundImage: `url(${scArrow})`
                   }}/>
                 </div>
               </div>

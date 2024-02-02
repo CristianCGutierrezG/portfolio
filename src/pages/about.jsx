@@ -131,7 +131,6 @@ export default function About(props) {
                     also a pixel art artist
                   </p>
                 </div>
-                
               </Card>
             </div>
           ) : showInfo === 2 ? (
@@ -144,7 +143,7 @@ export default function About(props) {
                 <div>
                   <div>
                     <p>VIDEO GAMES</p>
-                    <div div id="hobbies_img">
+                    <div id="hobbies_img">
                       <img src={spControl} alt="GamesImg" />
                     </div>
                   </div>
@@ -158,7 +157,7 @@ export default function About(props) {
                 <div>
                   <div>
                     <p>STORYTELLING</p>
-                    <div div id="hobbies_img">
+                    <div id="hobbies_img">
                       <img src={spStoryteller} alt="StoryImg" />
                     </div>
                   </div>
@@ -169,10 +168,11 @@ export default function About(props) {
                     </div>
                   </div>
                 </div>
-                
               </Card>
             </div>
-          ) : null}
+          ) 
+          : null
+          }
         </div>
       </div>
     </section>

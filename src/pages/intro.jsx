@@ -44,7 +44,10 @@ export default function Intro(props) {
         >
           <Parallax
             bgImage={bgRocks}
-            bgImageStyle={{ height: "100%", width: "100%" }}
+            bgImageStyle={{ 
+              height: "100%", 
+              width: "100%", 
+              backdropFilter: "blur(1.2px)"}}
             strength={500}
           >
             <Parallax
@@ -54,6 +57,7 @@ export default function Intro(props) {
                 width: "200%",
                 left: "100%",
                 animation: "clouds 15s linear infinite",
+                backdropFilter: "blur(0.7px)"
               }}
               strength={600}
             >

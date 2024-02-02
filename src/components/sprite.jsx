@@ -12,7 +12,6 @@ export default function Sprite({ image, data }) {
         backgroundSize: `${hBackground}% ${wBackground}%`,
         backgroundPosition: `-${x}px -${y}px`,
         lineHeight: "0",
-        // cursor: `url(${cursorHand}), pointer`,
       }}
     />
   );

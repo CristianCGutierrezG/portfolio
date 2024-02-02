@@ -1,10 +1,260 @@
 .otherWorks{
     &_background {
+      position: relative;
       height: 100vh;
       width: 100%;
       background-repeat: no-repeat;
       background-size: 100% 100%;
       background-color: #b00f00;
     }
+    &_content {
+      height: 100%;
+      width: 100%;
+      @include flex(column, nowrap, center, null);
+      &__box1{
+        @include flex(row, nowrap, center, center);
+        margin-top: 63px;
+        height: 10%;
+        &-title{
+          position: relative;
+          margin: 0;
+        }& h1{
+          text-shadow: 3px 4px 1px #353535;
+          font-size: 3em;  
+          color: #ffffff;
+        }
+      }
+      &__box2{
+        margin-top: 10px;
+        height: 90%;
+        @include flex(row, null, center, null);
+        &-intern{
+          margin: 0 10px 0 10px;
+          height: 87%;
+          width: 90%;
+          @include flex(row, null,space-around, null);
+          overflow: hidden;
+        }
+      }
+    }
 }
-  
+
+.introPage{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  @include flex(flex, null, null, center);
+  border: #353535;
+  border-width: 5px;
+  border-style: solid;
+  &_gif{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    & img{
+      width: 100%;
+      height: 100%;
+    }
+  }  
+}
+
+.scSkull{
+  position: absolute;
+  width: 104%;
+  height: 112%;
+  top: -8.5%;
+  left: -2%;
+  &_actor{
+    position: relative;
+    width: 30%;
+    height: 100%;
+    left: 36%;
+  }
+  &_box{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    z-index: 1001;
+  }
+}
+
+#up{
+  position: relative;
+  top: 10%;
+  width: 25%;
+  height: 35%;
+}
+
+#down{
+  position: relative;
+  top: 55%;
+  width: 25%;
+  height: 35%;
+}
+
+.cardPage {
+  position: absolute;
+  @include flex(row, nowrap, center, center);
+  top: 5%;
+  left: 15%;
+  width: 70%;
+  height: 90%;
+  z-index: 1001;
+  // min-width: 815px;
+  background-color: rgb(0, 0, 0);
+  z-index: 1001;
+  @include flex(column, null, null, null);
+  color: white;
+  & button {
+    position: absolute;
+    margin: 10px;
+    color: white;
+    font-size: 40px;
+    top:0%;
+    right: 0%;
+  }
+  &-title {
+    @include flex(flex, null, null, center);
+    padding-left: 15px;
+    width: 100%;
+    height: 10%;
+    background-color: #000000;
+    & h2 {
+      padding: 0;
+      margin: 0;
+      font-size: 1.5em;
+      text-align: center;
+      text-shadow: 3px 4px 1px #353535;
+    }
+  } 
+  &_content{
+    width: 100%;
+    height: 90%;
+    background-color: #393737;
+    @include flex(row, null, null, null);
+    &_gif{
+      width: 50%;
+      height: 100%;
+      & img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &_info{
+      width: 50%;
+      height: 100%;
+      padding: 10px;
+      &-intern{
+        @include flex(column, nowrap, center, center);
+        gap: 5px;
+        &_description{
+          height: 40%;
+          text-align: left;
+          @include flex(flex, nowrap, center, center);
+            & p{
+              font-size: 16px;
+            }
+ 
+        }
+        &_tools{
+          &-title{
+            margin-top: 10px;
+            width: 100%;
+            height: 8%;
+          }
+          &-content{
+            width: 100%;
+            height: 15%;
+            & div{
+              @include flex(flex, nowrap, start, null);
+              margin-left: 20px;
+              gap: 30px;
+            }
+          }
+        }
+        &_links{
+          width: 100%;
+          height: 25%;
+          margin-top: 10px;
+          @include flex(row, null, space-around, center);
+          & h3{
+            text-align: center;
+            font-size: 16px;
+          }
+            &-imgGit{
+              width: 100px;
+              height: 100px;
+              & a{
+                margin-top: 5px;
+                width: 100%;
+                height: 100%;
+                line-height: 0;
+                display: block;
+                & img{
+                  position: relative;
+                  width: 100%;
+                  height: 100%;
+                  @include cursor();
+                }
+              }
+              
+              
+            }
+           
+        }
+      }
+    }
+  }
+}
+
+.expanding{
+  animation: expandAnimation 0.9s ease-in-out;
+}
+
+.retracting{
+  animation: retractAnimation 0.8s ;
+}
+
+
+
+@keyframes expandAnimation {
+  0%{
+    width: 50%;
+    height: 0%;
+    -webkit-transform:scale(0);
+    transform: scale(0);
+  }
+  40%{
+    width: 100%;
+    height: 45%;
+    -webkit-transform:scale(0.1);
+    transform: scale(0.1);
+  }
+  50%{
+    width: 100%;
+    height: 55%;
+    -webkit-transform:scale(0.2);
+    transform: scale(0.2);
+  }
+  100%{
+    width: 100%;
+    height: 90%;
+    -webkit-transform:scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes retractAnimation {
+  from {
+    
+    -webkit-transform:scale(1);
+    transform: scale(1);
+  }
+  to {
+    width: 100%;
+    height: 100%;
+    -webkit-transform:scale(0);
+    transform: scale(0);
+    display: none;
+  } 
+}

@@ -86,11 +86,12 @@
     @include flex(column, null, null, null);
     color: white;
     & button {
-      margin: 20px;
+      margin: 20px 10px 0 0;
       color: white;
       font-size: 50px;
       position: absolute;
-      left: 87.5%;
+      top:0%;
+      right: 0%;
     }
     &-title {
       margin-top: 70px;
@@ -99,6 +100,7 @@
       & h2 {
         font-size: 2em;
         text-align: center;
+        text-shadow: 3px 4px 1px #353535;
       }
     } 
   

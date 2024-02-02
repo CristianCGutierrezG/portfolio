@@ -6,7 +6,7 @@ export default function useWalk() {
   const [lastScrollTop, setLastScrollTop] = useState(0);
 
   function walk() {
-    let st = window.pageYOffset || document.documentElement.scrollTop;
+    let st = window.scrollY || document.documentElement.scrollTop;
     setDir(() => (st > lastScrollTop ? 0 : 1));
     setLastScrollTop(st);
     setStep((prev) => (prev < 8 ? prev + 1 : 1));
