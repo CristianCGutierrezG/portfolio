@@ -1,5 +1,6 @@
 .contact {
   &_background {
+    position: relative;
     height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
@@ -27,6 +28,72 @@
           }
         }
       }
+  }
+  &_email{
+    position: absolute;
+    width: 100%;
+    height: 12.8%;
+    @include flex(flex, null, center, center);
+    top: 31%;
+    &_button{
+      height: 100%;
+      width: 7%;
+      display: block;
+      @include flex(flex, null, center, center);
+      &-eyes{
+        width: 50%;
+        height: 10%;
+        &-pixel{
+          width: 100%;
+          height: 100%;
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          @include cursor();
+        }
+      }
     }
+  }
 }
 
+.cardEmail {
+  position: absolute;
+  @include flex(row, nowrap, center, center);
+  top: 5%;
+  left: 15%;
+  width: 70%;
+  height: 90%;
+  z-index: 1001;
+  // min-width: 815px;
+  background-color: rgb(0, 0, 0);
+  z-index: 1001;
+  @include flex(column, null, null, null);
+  color: white;
+  & button {
+    position: absolute;
+    margin: 10px;
+    color: white;
+    font-size: 40px;
+    top:0%;
+    right: 0%;
+  }
+  &_title {
+    @include flex(flex, null, null, center);
+    padding-left: 15px;
+    width: 100%;
+    height: 10%;
+    background-color: #000000;
+    & h2 {
+      padding: 0;
+      margin: 0;
+      font-size: 1.5em;
+      text-align: center;
+      text-shadow: 3px 4px 1px #353535;
+    }
+  } 
+  &_content{
+    width: 100%;
+    height: 90%;
+    background-color: #393737;
+    @include flex(row, null, null, null);
+  }
+}
