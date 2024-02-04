@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Howl, Howler } from "howler";
+import { motion } from "framer-motion";
 
 //components
 import CardEmail from "../components/cardEmail";
@@ -9,6 +10,7 @@ import bgCastle from "../images/Back-ground/BigSize/Castle.gif";
 import imgGitRepo from "../images/Sprites/BigSize/GitHub.png";
 import imgLinkedin from "../images/Sprites/BigSize/LinkedIn.png";
 import eyes from "../images/Sprites/BigSize/Eyes.png";
+import arrow from "../images/Sprites/BigSize/ArrowPoint.png"
 
 //sounds
 import soundBowser from "../sounds/bowserLaugh.mp3";
@@ -16,6 +18,7 @@ import soundBowser from "../sounds/bowserLaugh.mp3";
 export default function Contact(props) {
   const [hovered, setHovered] = useState(false);
   const [click, setClick] = useState(false);
+  const [clickArrow, setClickArrow] = useState(false)
 
   async function playSoundAsync(src) {
     return new Promise((resolve) => {
@@ -34,8 +37,8 @@ export default function Contact(props) {
   }
   function handleClick() {
     !click ? setClick(true) : setClick(false); 
+    setClickArrow(true);
   }
-
 
   return (
     <section id={props.id}>
@@ -57,6 +60,21 @@ export default function Contact(props) {
             </a>
           </div>
         </div>
+        {!clickArrow && (
+          <motion.div
+            style={{
+              backgroundImage: `url(${arrow})`,
+            }}
+            className="contact_arrow"
+            animate={{
+              translateY: [10, -10, 10, -10, 10],
+            }}
+            transition={{
+            duration: 2,
+            repeat: Infinity,
+            }}
+            />
+        )}
         <div className="contact_email">
           <button
             className="contact_email_button"

@@ -2,13 +2,13 @@ import { useEffect } from "react";
 import { useState, useRef } from "react";
 import { Link } from "react-scroll";
 import { Howl, Howler } from "howler";
+import { motion } from "framer-motion";
 
 //components
 import LuckyBlock from "../components/luckyBlock";
 import Picture from "../components/picture";
 import Card from "../components/card";
 
-//hooks
 
 //images
 import bgAbout from "../images/Back-ground/BigSize/about2.png";
@@ -18,6 +18,7 @@ import spBook from "../images/Sprites/BigSize/Book.png";
 import spControl from "../images/Sprites/BigSize/Control.png";
 import spDraw from "../images/Sprites/BigSize/Draw.png";
 import spStoryteller from "../images/Sprites/BigSize/Storyteller.png";
+import arrow from "../images/Sprites/BigSize/ArrowPoint.png"
 
 //sounds
 import soundPipeline from "../sounds/MarioPipeline.mp3";
@@ -25,6 +26,7 @@ import soundPipeline from "../sounds/MarioPipeline.mp3";
 export default function About(props) {
   const [scrollOn, setScrollOn] = useState(false);
   const [showInfo, setShowInfo] = useState(0);
+  const [clickArrow, setClickArrow] = useState(false);
   var Scroll = require("react-scroll");
   var Events = Scroll.Events;
 
@@ -51,6 +53,7 @@ export default function About(props) {
 
   const handleClickLuckyblock = (ButtonId) => {
     setShowInfo(ButtonId);
+    setClickArrow(true)
   };
 
   const divRef = useRef();
@@ -81,6 +84,21 @@ export default function About(props) {
                 </div>
               </div>
             </div>
+            {!clickArrow && (
+            <motion.div
+              style={{
+              backgroundImage: `url(${arrow})`,
+              }}
+              className="about_content-arrow"
+              animate={{
+                translateY: [10, -10, 10, -10, 10],
+              }}
+              transition={{
+              duration: 2,
+              repeat: Infinity,
+              }}
+            />
+            )}
             <div className="about_content-box2-flex ">
               <div className="about_content-box2-flex-center right">
                 <div className="about_content-box2-luckyBlock" ref={blockRef}>

@@ -87,7 +87,7 @@ export default function Intro(props) {
                     }}
                     click={click}
                   />
-                  {!click ? (
+                  {!click && (
                     <motion.button
                       style={{
                         backgroundImage: `url(${musicalNote})`,
@@ -102,8 +102,6 @@ export default function Intro(props) {
                         repeat: Infinity,
                       }}
                     />
-                  ) : (
-                    ""
                   )}
                   <Parallax
                     bgImage={bgMontain}
