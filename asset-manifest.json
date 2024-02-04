@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.65aabc71.css",
-    "main.js": "/portfolio/static/js/main.e0849305.js",
+    "main.css": "/portfolio/static/css/main.74966b40.css",
+    "main.js": "/portfolio/static/js/main.486d44fa.js",
     "static/media/PresentationPicture.jpeg": "/portfolio/static/media/PresentationPicture.32115dff253f69bb0762.jpeg",
     "static/media/Castle.gif": "/portfolio/static/media/Castle.0e4e7c1b34ace1c05eec.gif",
     "static/media/River.gif": "/portfolio/static/media/River.1e42a0bd9a26718143d8.gif",
     "static/media/MarioIntro.mp3": "/portfolio/static/media/MarioIntro.d712c8d521e459284fe4.mp3",
+    "static/media/bowserLaugh.mp3": "/portfolio/static/media/bowserLaugh.141f118da4873bf82f74.mp3",
     "static/media/TypefaceMarioWorldPixelFilledRegular-rgVMx.ttf": "/portfolio/static/media/TypefaceMarioWorldPixelFilledRegular-rgVMx.fa100bb83c31c51adfe6.ttf",
     "static/media/Lava1.gif": "/portfolio/static/media/Lava1.bd1a3d8556b635e0e4d3.gif",
     "static/media/batSound.mp3": "/portfolio/static/media/batSound.8762113eee097079c35c.mp3",
@@ -19,11 +20,11 @@
     "static/media/bg-Montain.png": "/portfolio/static/media/bg-Montain.8a6263c087675fe18f26.png",
     "static/media/Super-Mario-World.ttf": "/portfolio/static/media/Super-Mario-World.d51af975b394ae89bb3f.ttf",
     "index.html": "/portfolio/index.html",
-    "main.65aabc71.css.map": "/portfolio/static/css/main.65aabc71.css.map",
-    "main.e0849305.js.map": "/portfolio/static/js/main.e0849305.js.map"
+    "main.74966b40.css.map": "/portfolio/static/css/main.74966b40.css.map",
+    "main.486d44fa.js.map": "/portfolio/static/js/main.486d44fa.js.map"
   },
   "entrypoints": [
-    "static/css/main.65aabc71.css",
-    "static/js/main.e0849305.js"
+    "static/css/main.74966b40.css",
+    "static/js/main.486d44fa.js"
   ]
 }
