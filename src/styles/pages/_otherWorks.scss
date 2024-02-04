@@ -5,7 +5,6 @@
       width: 100%;
       background-repeat: no-repeat;
       background-size: 100% 100%;
-      background-color: #b00f00;
     }
     &_content {
       height: 100%;
@@ -34,6 +33,12 @@
           width: 90%;
           @include flex(row, null,space-around, null);
           overflow: hidden;
+          &-raft{
+            width: 25%;
+            height: 35%;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+          }
         }
       }
     }
@@ -43,13 +48,10 @@
   position: relative;
   width: 100%;
   height: 100%;
-  @include flex(flex, null, null, center);
-  border: #353535;
-  border-width: 5px;
-  border-style: solid;
+  @include flex(flex, null, center, center);
   &_gif{
     position: absolute;
-    width: 100%;
+    width: 90%;
     height: 90%;
     & img{
       width: 100%;
@@ -82,15 +84,12 @@
 #up{
   position: relative;
   top: 10%;
-  width: 25%;
-  height: 35%;
+  
 }
 
 #down{
   position: relative;
   top: 55%;
-  width: 25%;
-  height: 35%;
 }
 
 .cardPage {
@@ -213,7 +212,7 @@
 }
 
 .retracting{
-  animation: retractAnimation 0.8s ;
+  animation: retractAnimation 0.7s ;
 }
 
 
@@ -226,19 +225,19 @@
     transform: scale(0);
   }
   40%{
-    width: 100%;
+    width: 90%;
     height: 45%;
     -webkit-transform:scale(0.1);
     transform: scale(0.1);
   }
   50%{
-    width: 100%;
+    width: 90%;
     height: 55%;
     -webkit-transform:scale(0.2);
     transform: scale(0.2);
   }
   100%{
-    width: 100%;
+    width: 90%;
     height: 90%;
     -webkit-transform:scale(1);
     transform: scale(1);

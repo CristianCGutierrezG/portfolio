@@ -5,4 +5,28 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
+  &_links{
+      height: 100%;
+      width: 100%;
+      @include flex(row, null, space-around, center);
+      gap:7%;
+      &-box{
+        margin-top: 50px;
+        width: 125px;
+        height: 125px;
+        & a{
+          width: 100%;
+          height: 100%;
+          line-height: 0;
+          display: block;
+          & img{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            @include cursor();
+          }
+        }
+      }
+    }
 }
+

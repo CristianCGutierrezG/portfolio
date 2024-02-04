@@ -6,6 +6,7 @@ import CardPage from "../components/cardPage";
 
 //images
 import bgRiver from "../images/Back-ground/BigSize/River.gif";
+import bgRaft from "../images/Back-ground/BigSize/Raft.gif";
 
 
 export default function OtherWorks(props) { 
@@ -32,13 +33,22 @@ export default function OtherWorks(props) {
           </div>
           <div className="otherWorks_content__box2">
             <div className="otherWorks_content__box2-intern">
-              <div id="up">
+              <div className="otherWorks_content__box2-intern-raft" id="up" 
+                style={{
+                  backgroundImage: `url(${bgRaft ? bgRaft : ""})`,
+                }}>
                 <IntroPage gif={bgRiver} click={() => handleClickSkull(1)}/>
               </div>
-              <div id="down">
+              <div className="otherWorks_content__box2-intern-raft" id="down"
+                style={{
+                  backgroundImage: `url(${bgRaft ? bgRaft : ""})`,
+                }}>
                 <IntroPage gif={bgRiver} click={() => handleClickSkull(2)}/>
               </div>
-              <div id="up">
+              <div className="otherWorks_content__box2-intern-raft" id="up"
+                style={{
+                  backgroundImage: `url(${bgRaft ? bgRaft : ""})`,
+                }}>
                 <IntroPage gif={bgRiver} click={() => handleClickSkull(3)}/>
               </div>
             </div>
