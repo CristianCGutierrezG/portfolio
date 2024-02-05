@@ -57,14 +57,13 @@ export default function Table({content, actual, animationIn, animationOut}) {
       {content.map(item => (
       <div key={item.key} className="table_row" >
         <div className="table_row-element">
-          <div className="table_row-element-hoverInfo" 
+          {onHover &&
+          (<div className="table_row-element-hoverInfo" 
           onMouseLeave={handleHoverOff} 
           onMouseEnter={handleHoverOn}
-            style={{
-              display: onHover ? "block" : "none",
-            }}>
-            <h2>{item.name}</h2>
-          </div>
+          >
+          <h2>{item.name}</h2>
+          </div>)}
           <div className="table_row-element-logo" 
             onMouseLeave={handleHoverOff} 
             onMouseEnter={handleHoverOn}
