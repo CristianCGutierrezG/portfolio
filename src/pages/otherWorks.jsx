@@ -7,6 +7,8 @@ import CardPage from "../components/cardPage";
 //images
 import bgRiver from "../images/Back-ground/BigSize/River.gif";
 import bgRaft from "../images/Back-ground/BigSize/Raft.gif";
+import gifPixar from "../images/gifPresentation/PixarPage .gif"
+import gifConversor from "../images/gifPresentation/divisas.gif"
 
 
 export default function OtherWorks(props) { 
@@ -27,7 +29,7 @@ export default function OtherWorks(props) {
           <div className="otherWorks_content__box1">
             <div className="otherWorks_content__box1-title" >
               <h1>
-                OTHER WORKS
+                PROJECTS
               </h1>
             </div>
           </div>
@@ -43,13 +45,13 @@ export default function OtherWorks(props) {
                 style={{
                   backgroundImage: `url(${bgRaft ? bgRaft : ""})`,
                 }}>
-                <IntroPage gif={bgRiver} click={() => handleClickSkull(2)}/>
+                <IntroPage gif={gifConversor} click={() => handleClickSkull(2)}/>
               </div>
               <div className="otherWorks_content__box2-intern-raft" id="up"
                 style={{
                   backgroundImage: `url(${bgRaft ? bgRaft : ""})`,
                 }}>
-                <IntroPage gif={bgRiver} click={() => handleClickSkull(3)}/>
+                <IntroPage gif={gifPixar} click={() => handleClickSkull(3)}/>
               </div>
             </div>
           </div> 
@@ -70,53 +72,59 @@ export default function OtherWorks(props) {
                 <li>React</li>
                 <li>JS</li>
                 <li>SASS</li>
-              </ul>
-              <ul>
                 <li>HTML5</li>
               </ul>
             </CardPage>)
           :showInfo === 2 ? 
           (<CardPage
-            img={bgRiver}
-            title="ABOUT ME"
-            desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-                  fuga molestias quasi! Voluptatum nemo tempora maxime necessitatibus 
-                  dolorum facilis iusto recusandae enim reprehenderit. Saepe modi minima 
-                  blanditiis porro accusantium voluptatem."
-            linkGitPage="#"
-            linkGitRepo="#"
+            img={gifConversor}
+            title="Currency converter with API-Rest"
+            desc="Basic currency conversion application. 
+            This application has been developed using a database to store updated exchange 
+            rates and has a REST API to provide access to these exchange rates efficiently."
+            linkGitPage="https://github.com/CristianCGutierrezG/Conversion-de-divisas"
+            linkGitRepo="https://github.com/CristianCGutierrezG/Conversion-de-divisas"
             info = {showInfo}
             click={() => handleClickSkull(0)}
           >
-            <ul>
-              <li>React</li>
-              <li>JS</li>
-              <li>SASS</li>
-            </ul>
-            <ul>
-              <li>HTML5</li>
+            <div className="cardPage_content_info-intern_tools-title">
+              <h3>Tools</h3>
+            </div>
+            <ul className="cardPage_content_info-intern_tools-content">
+              <li>Node.js</li>
+              <li>mySQL</li>
+              <li>Express</li>
+              <li>VsCode</li>
+              <li>React.js</li>
+              <li>Bootstrap</li>
             </ul>
           </CardPage>)
           : showInfo === 3 ? 
           (<CardPage
-            img={bgRiver}
-            title="i did't"
-            desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-                  fuga molestias quasi! Voluptatum nemo tempora maxime necessitatibus 
-                  dolorum facilis iusto recusandae enim reprehenderit. Saepe modi minima 
-                  blanditiis porro accusantium voluptatem."
-            linkGitPage="#"
-            linkGitRepo="#"
+            img={gifPixar}
+            title="Copy of Pixar.com"
+            desc="Copy of the Home of the website www.pixar.com"
+            linkGitPage="https://cristiancgutierrezg.github.io/Pixar-Page-copy/"
+            linkGitRepo="https://github.com/CristianCGutierrezG/Pixar-Page-copy"
             info = {showInfo}
             click={() => handleClickSkull(0)}
           >
-            <ul>
-              <li>React</li>
-              <li>JS</li>
-              <li>SASS</li>
-            </ul>
-            <ul>
+            <div className="cardPage_content_info-intern_tools-title">
+              <h3>Tools</h3>
+            </div>
+            <ul className="cardPage_content_info-intern_tools-content">
               <li>HTML5</li>
+              <li>SASS</li>
+              <li>JavaScript</li>
+              <li>VsCode</li>
+            </ul>
+            <div className="cardPage_content_info-intern_tools-title">
+              <h3>Features</h3>
+            </div>
+            <ul className="cardPage_content_info-intern_tools-content">
+              <li>🎨 Designed with SASS and BEM methodology</li>
+              <li>📱 Fully Responsive</li>
+              <li>📑 Practice of Vanilla js technologies and basicScroll library</li>
             </ul>
           </CardPage>)
           :null

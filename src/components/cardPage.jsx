@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 
 //images
 import imgGitRepo from "../images/Sprites/BigSize/GitHub.png";
+import imgGitPages from "../images/Sprites/BigSize/GitHubPages.png";
 
 const variants = {
     open: { scale: 1 },
@@ -31,21 +32,16 @@ export default function CardPage(prop) {
                         <div className="cardPage_content_info-intern_description">
                             <p>{prop.desc}</p>
                         </div>
-                        <div className="cardPage_content_info-intern_tools-title">
-                            <h3>Tools</h3>
-                        </div>
-                        <div className="cardPage_content_info-intern_tools-content">
-                            <div>{prop.children}</div>
-                        </div>
+                            <div className="cardPage_content_info-intern_tools">{prop.children}</div>
                         <div className="cardPage_content_info-intern_links">
                             <div className="cardPage_content_info-intern_links-imgGit">
-                                <h3>GitHub Page</h3>
+                                <h3>Demo</h3>
                                 <a href={prop.linkGitPage} >
-                                    <img src={imgGitRepo} alt="GitHubPage" />
+                                    <img src={imgGitPages} alt="GitHubPage" />
                                 </a>
                             </div>
                             <div className="cardPage_content_info-intern_links-imgGit">
-                                <h3>GitHub Repo</h3>
+                                <h3>Repo</h3>
                                 <a href={prop.linkGitRepo} >
                                     <img src={imgGitRepo} alt="GitHubRepo" />
                                 </a>

@@ -14,7 +14,7 @@ import scJS from "../images/Sprites/BigSize/JS.png";
 import scReact from "../images/Sprites/BigSize/React.png";
 import scSASS from "../images/Sprites/BigSize/SASS.png";
 import scGIT from "../images/Sprites/BigSize/GIT.png";
-import scFigma from "../images/Sprites/BigSize/Figma.png";
+import scNode from "../images/Sprites/BigSize/Node.png";
 import scSQL from "../images/Sprites/BigSize/SQL.png";
 import scArrow from "../images/Sprites/BigSize/arrow.png";
 
@@ -34,7 +34,7 @@ export default function Skills(props) {
     [
       {key:5, name:"SASS", img: scSASS, NumCoins: 2},
       {key:6, name:"GIT", img: scGIT, NumCoins: 2},
-      {key:7, name:"Figma", img: scFigma, NumCoins: 2},
+      {key:7, name:"Node.js", img: scNode, NumCoins: 2},
       {key:8, name:"SQL", img: scSQL, NumCoins: 1}
     ]
     

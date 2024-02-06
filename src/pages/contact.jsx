@@ -55,7 +55,7 @@ export default function Contact(props) {
             </a>
           </div>
           <div className="contact_links-box">
-            <a href="/">
+            <a href="https://www.linkedin.com/in/cristian-guti%C3%A9rrez-5aba6a240/">
               <img src={imgLinkedin} alt="LinkedIn" />
             </a>
           </div>
