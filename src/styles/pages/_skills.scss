@@ -30,14 +30,14 @@
   @include flex(column, nowrap, center, null);
   &__box1{
     @include flex(row, nowrap, center, center);
-    margin-top: 63px;
+    margin-top: 12vh;
     height: 10%;
     &-title{
       position: relative;
       margin: 0;
     }& h1{
       text-shadow: 3px 4px 1px #1937a3;
-      font-size: 3em;  
+      font-size: 9vh;  
       color: #f7d419;
     }
   }
@@ -69,8 +69,8 @@
   @include flex(row, nowrap, space-between, center);
   &-arrow{
     z-index: 1005;
-    width: 30px;
-    height: 70px;
+    width: 2vw;
+    height: 13vh;
     top: 180px;
     & button{    
       width: 100%;
@@ -119,7 +119,7 @@
         z-index: 1001;
         h2{
           text-shadow: 3px 3px 1px #1937a3;
-          font-size: 0.8em !important;
+          font-size: 2vh !important;
           color: rgb(255, 255, 255, 0.8);
         }
       }
@@ -133,7 +133,7 @@
   height: 10%;
   h5 {
     text-shadow: 3px 3px 1px #1937a3;
-    font-size: 1em !important;
+    font-size: 3vh !important;
     color: #fff;
   }
 }

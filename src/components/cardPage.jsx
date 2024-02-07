@@ -34,12 +34,14 @@ export default function CardPage(prop) {
                         </div>
                             <div className="cardPage_content_info-intern_tools">{prop.children}</div>
                         <div className="cardPage_content_info-intern_links">
+                            {prop.demo && 
                             <div className="cardPage_content_info-intern_links-imgGit">
                                 <h3>Demo</h3>
                                 <a href={prop.linkGitPage} >
                                     <img src={imgGitPages} alt="GitHubPage" />
                                 </a>
                             </div>
+                            }
                             <div className="cardPage_content_info-intern_links-imgGit">
                                 <h3>Repo</h3>
                                 <a href={prop.linkGitRepo} >

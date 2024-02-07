@@ -7,15 +7,17 @@ import CardPage from "../components/cardPage";
 //images
 import bgRiver from "../images/Back-ground/BigSize/River.gif";
 import bgRaft from "../images/Back-ground/BigSize/Raft.gif";
-import gifPixar from "../images/gifPresentation/PixarPage .gif"
-import gifConversor from "../images/gifPresentation/divisas.gif"
+import gifPixar from "../images/gifPresentation/PixarPage .gif";
+import gifConversor from "../images/gifPresentation/divisas.gif";
+import gifMovie from "../images/gifPresentation/ReactMovie.gif";
 
 
 export default function OtherWorks(props) { 
   const [showInfo, setShowInfo] = useState(0);
+  const [haveDemo, setHaveDemo] = useState(false);
   
   function handleClickSkull(ButtonId) {
-    setShowInfo(ButtonId)
+    setShowInfo(ButtonId) 
   }
   
     return (
@@ -39,41 +41,53 @@ export default function OtherWorks(props) {
                 style={{
                   backgroundImage: `url(${bgRaft ? bgRaft : ""})`,
                 }}>
-                <IntroPage gif={bgRiver} click={() => handleClickSkull(1)}/>
+                <IntroPage gif={gifMovie} click={() => {handleClickSkull(1)
+                                                        setHaveDemo(false)}}/>
               </div>
               <div className="otherWorks_content__box2-intern-raft" id="down"
                 style={{
                   backgroundImage: `url(${bgRaft ? bgRaft : ""})`,
                 }}>
-                <IntroPage gif={gifConversor} click={() => handleClickSkull(2)}/>
+                <IntroPage gif={gifConversor} click={() => {handleClickSkull(2)
+                                                        setHaveDemo(false)}}/>
               </div>
               <div className="otherWorks_content__box2-intern-raft" id="up"
                 style={{
                   backgroundImage: `url(${bgRaft ? bgRaft : ""})`,
                 }}>
-                <IntroPage gif={gifPixar} click={() => handleClickSkull(3)}/>
+                <IntroPage gif={gifPixar} click={() => {handleClickSkull(3)
+                                                        setHaveDemo(true)}}/>
               </div>
             </div>
           </div> 
           {showInfo === 1 ?
             (<CardPage
-              img={bgRiver}
-              title="Hellow motherfuker"
-              desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-                    fuga molestias quasi! Voluptatum nemo tempora maxime necessitatibus 
-                    dolorum facilis iusto recusandae enim reprehenderit. Saepe modi minima 
-                    blanditiis porro accusantium voluptatem."
-              linkGitPage="#"
-              linkGitRepo="#"
+              img={gifMovie}
+              title="React-movie"
+              desc="Website that provides users with detailed 
+              information about a wide variety of movies. Connected to themoviedb API."
+              linkGitPage="/"
+              linkGitRepo="https://github.com/CristianCGutierrezG/React-movie"
               info = {showInfo}
-              click={() => handleClickSkull(0)}
+              demo = {haveDemo}
+              click={() => handleClickSkull(0)}    
             >
-              <ul>
-                <li>React</li>
-                <li>JS</li>
-                <li>SASS</li>
-                <li>HTML5</li>
+              <div className="cardPage_content_info-intern_tools-title">
+              <h3>Tools</h3>
+              </div>
+              <ul className="cardPage_content_info-intern_tools-content">
+                <li>Node.js</li>
+                <li>React.js</li>
+                <li>CSS</li>
               </ul>
+              <div className="cardPage_content_info-intern_tools-title">
+              <h3>Features</h3>
+              </div>
+              <ul className="cardPage_content_info-intern_tools-content">
+                <li>🎨 Multi-Page Layout</li>
+                <li>📱 Styled with React-Styled-components and CSS</li>
+                <li>📖 Multi-Page Layout</li>
+            </ul>
             </CardPage>)
           :showInfo === 2 ? 
           (<CardPage
@@ -82,9 +96,10 @@ export default function OtherWorks(props) {
             desc="Basic currency conversion application. 
             This application has been developed using a database to store updated exchange 
             rates and has a REST API to provide access to these exchange rates efficiently."
-            linkGitPage="https://github.com/CristianCGutierrezG/Conversion-de-divisas"
+            linkGitPage="/"
             linkGitRepo="https://github.com/CristianCGutierrezG/Conversion-de-divisas"
             info = {showInfo}
+            demo = {haveDemo}
             click={() => handleClickSkull(0)}
           >
             <div className="cardPage_content_info-intern_tools-title">
@@ -92,10 +107,10 @@ export default function OtherWorks(props) {
             </div>
             <ul className="cardPage_content_info-intern_tools-content">
               <li>Node.js</li>
+              <li>React.js</li>
               <li>mySQL</li>
               <li>Express</li>
               <li>VsCode</li>
-              <li>React.js</li>
               <li>Bootstrap</li>
             </ul>
           </CardPage>)
@@ -107,6 +122,7 @@ export default function OtherWorks(props) {
             linkGitPage="https://cristiancgutierrezg.github.io/Pixar-Page-copy/"
             linkGitRepo="https://github.com/CristianCGutierrezG/Pixar-Page-copy"
             info = {showInfo}
+            demo = {haveDemo}
             click={() => handleClickSkull(0)}
           >
             <div className="cardPage_content_info-intern_tools-title">

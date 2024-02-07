@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 const variants = {
@@ -61,7 +61,7 @@ export default function CardEmail({ info, click }) {
                         <label>Email</label>
                         <input type="email" name="user_email" />
                         <label>Message</label>
-                        <textarea name="message" style={{ width: "459px", height: "142px" }} />
+                        <textarea name="message" style={{ width: "80vh", height: "25vh" }} />
                         <input type="submit" value="Send" />
                     </form>
             </div>
