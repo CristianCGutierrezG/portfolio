@@ -84,8 +84,8 @@ export default function OtherWorks(props) {
               <h3>Features</h3>
               </div>
               <ul className="cardPage_content_info-intern_tools-content">
-                <li>🎨 Multi-Page Layout</li>
-                <li>📱 Styled with React-Styled-components and CSS</li>
+                <li>🎨 Styled with React-Styled-components and CSS</li>
+                <li>📱 Fully Responsive</li>
                 <li>📖 Multi-Page Layout</li>
             </ul>
             </CardPage>)
