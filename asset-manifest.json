@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.f66f3839.css",
-    "main.js": "/portfolio/static/js/main.de38eab9.js",
+    "main.js": "/portfolio/static/js/main.516b2a23.js",
     "static/media/PixarPage .gif": "/portfolio/static/media/PixarPage .a09fdd1ee3fb8982dd5c.gif",
     "static/media/ReactMovie.gif": "/portfolio/static/media/ReactMovie.3699adc5ee76e68a8296.gif",
     "static/media/PresentationPicture.jpeg": "/portfolio/static/media/PresentationPicture.32115dff253f69bb0762.jpeg",
@@ -24,10 +24,10 @@
     "static/media/Super-Mario-World.ttf": "/portfolio/static/media/Super-Mario-World.d51af975b394ae89bb3f.ttf",
     "index.html": "/portfolio/index.html",
     "main.f66f3839.css.map": "/portfolio/static/css/main.f66f3839.css.map",
-    "main.de38eab9.js.map": "/portfolio/static/js/main.de38eab9.js.map"
+    "main.516b2a23.js.map": "/portfolio/static/js/main.516b2a23.js.map"
   },
   "entrypoints": [
     "static/css/main.f66f3839.css",
-    "static/js/main.de38eab9.js"
+    "static/js/main.516b2a23.js"
   ]
 }
